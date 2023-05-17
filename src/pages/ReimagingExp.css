@@ -1,0 +1,33 @@
+.fromLeft{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: all 1s;
+    transform: translateX(-80%);
+    filter: blur(5px);
+}
+
+.show{
+    opacity: 1;
+    transform: translateX(0);
+    filter: blur(0);
+    
+}
+
+.fromRight{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: all 1s;
+    transform: translateX(30%);
+    filter: blur(5px);
+}
+
+.showRight{
+    opacity: 1;
+    transform: translateX(0);
+    filter: blur(0);
+    
+}
