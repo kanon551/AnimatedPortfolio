@@ -1,7 +1,9 @@
-# Getting Started with Create React App
+# vivekananda Reddy - Front-end Developer
 
 ![Alt Text](./src/assets/kiteanimation.gif);
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+This is my Portfolio project to show the glimpse of Scoll-based animation of an object followed 
+by an SVG path using React, Material-UI and Framer Motion
 
 ## Available Scripts
 
