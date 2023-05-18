@@ -114,40 +114,6 @@ const Reimage = () => {
       };
 
 
-      const observer = new IntersectionObserver((entries)=>{
-        entries.forEach((entry)=> {
-          if(entry.isIntersecting){
-            entry.target.classList.add('show');
-          }
-          else{
-            entry.target.classList.remove('show');
-          }
-        });
-      });
-
-
-      const observerRight = new IntersectionObserver((entries)=>{
-        entries.forEach((entry)=> {
-          if(entry.isIntersecting){
-            entry.target.classList.add('showRight');
-          }
-          else{
-            entry.target.classList.remove('showRight');
-          }
-        });
-      });
-
-      useEffect(()=> {
-        const hiddenElements = document.querySelectorAll('.fromLeft');
-        hiddenElements.forEach((el)=> observer.observe(el));
-      },[])
-
-      useEffect(()=> {
-        const hiddenElements = document.querySelectorAll('.fromRight');
-        hiddenElements.forEach((el)=> observerRight.observe(el));
-      },[])
-
-
   return (
     <Box sx={{ zIndex:5,width:'100%',height:'fit-content',
     paddingTop:'0.5vh',paddingBottom:'0.5vh'}}>

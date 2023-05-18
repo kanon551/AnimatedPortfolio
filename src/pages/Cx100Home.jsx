@@ -10,7 +10,7 @@ import styled from 'styled-components';
 import IconButton from '@mui/material/IconButton';
 import kanon from '../assets/kanon.png';
 import ReimagingExp from './ReimagingExp';
-import { GlobalStyles } from '@mui/material';
+import { GlobalStyles, useMediaQuery } from '@mui/material';
 
 const ElevationScroll = (props)=> {
     const { children, window } = props;
@@ -33,6 +33,9 @@ const ElevationScroll = (props)=> {
   `
 const Cx100Home = (props) => {
 
+  const matches1400 = useMediaQuery('(min-width:1400px)');
+  const matches2560 = useMediaQuery('(max-width:2560px)');
+  
   return (
     <React.Fragment>
       <GlobalStyles
@@ -76,10 +79,9 @@ const Cx100Home = (props) => {
       <Toolbar />
 
         <ReimagingExp/>
-        {/* {
-          matches1300 && matches1440 && <PaperPath/>
-        } */}
-        <PaperPath/>
+        {
+          matches1400 && matches2560 && <PaperPath/>
+        }
     </React.Fragment>
   )
 }
