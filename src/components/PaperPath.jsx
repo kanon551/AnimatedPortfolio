@@ -1,12 +1,12 @@
 import React, { useEffect, useState, useRef, useCallback } from 'react'
 import styled from 'styled-components'
 import Box from '@mui/material/Box';
-import arrow from '../assets/arrow.png';
+import kite from '../assets/kite.png';
 import { motion, useViewportScroll, useTransform } from "framer-motion";
 
 
 const ArrowMotion = styled(motion.div)`
-  background-image: url(${arrow});
+  background-image: url(${kite});
    background-repeat: no-repeat;
    background-size: contain;
    width: 10rem;
@@ -26,7 +26,8 @@ const PaperPath = () => {
     const [rotate, setRotate] = useState(75.85455601277424);
 
     const { scrollYProgress } = useViewportScroll();
-    const scale = useTransform(scrollYProgress, [0, 1], [1.3, 0.1]);
+    // const scale = useTransform(scrollYProgress, [0, 1], [1.3, 0.1]);
+    const scale = useTransform(scrollYProgress, [0, 1], [0.9, 1.7]);
 
 
     const [directionY, setDirectionY] = useState(window.scrollY);
