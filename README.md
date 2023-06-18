@@ -1,6 +1,10 @@
-# Getting Started with Create React App
+# Check dev-animation-vivek branch
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+
+https://github.com/kanon551/AnimatedPortfolio/assets/88090133/75ca36be-25a1-4352-b235-c3cb71231d26
+
+
 
 ## Available Scripts
 
