@@ -1,6 +1,10 @@
 # vivekananda Reddy - Front-end Developer
 
-![Alt Text](./src/assets/kiteanimation.gif);
+
+
+https://github.com/kanon551/AnimatedPortfolio/assets/88090133/dee1d7ff-3484-4ca1-9bd6-c89a26a5a5ed
+
+
 
 This is my Portfolio project to show the glimpse of Scoll-based animation of an object followed 
 by an SVG path using React, Material-UI and Framer Motion
